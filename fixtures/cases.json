@@ -1,0 +1,59 @@
+[
+  {
+    "id": "booking-basic",
+    "name": "完整基本需求",
+    "messages": [
+      "我是職涯顧問，想让客户自己预约一对一咨询。我一人管理，每次60分钟，平日晚上开放，提前一天预约。需要自动提醒和行事历同步，目前用讯息人工安排，无旧资料。每月预算两千元，一次设定三千元，下个月上线。"
+    ],
+    "expect": {
+      "services": {
+        "booking": 1,
+        "reminders": 1,
+        "calendar_sync": 1
+      },
+      "absent": [
+        "team_management"
+      ],
+      "known": [
+        "purpose",
+        "team",
+        "availability",
+        "workflow",
+        "budget",
+        "deadline"
+      ],
+      "subtotal": 1590
+    }
+  },
+  {
+    "id": "correction-custom",
+    "name": "改口與另外開發",
+    "messages": [
+      "我要顧問預約服務，需要提醒通知和多人共同管理，還要連公司內部系統。",
+      "改成只有我一人使用，不要多人管理，提醒通知保留。"
+    ],
+    "expect": {
+      "services": {
+        "booking": 1,
+        "reminders": 1,
+        "custom": 1
+      },
+      "absent": [
+        "team_management"
+      ],
+      "subtotal": 1290,
+      "pending": true
+    }
+  },
+  {
+    "id": "inquiry",
+    "name": "純詢價",
+    "messages": [
+      "只想問顧問預約服務和提醒通知多少錢，還沒有決定使用。"
+    ],
+    "expect": {
+      "intent": "inquiry",
+      "subtotal": 0
+    }
+  }
+]

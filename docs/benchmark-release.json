@@ -1,0 +1,2682 @@
+{
+  "at": "2026-10-05T13:44:10.308Z",
+  "settings": {
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "timeoutMs": 30000,
+    "promptVersion": "intake-v3"
+  },
+  "passed": 15,
+  "total": 15,
+  "latency": {
+    "calls": 19,
+    "medianMs": 7504,
+    "p90Ms": 8233,
+    "over10s": 0
+  },
+  "results": [
+    {
+      "id": "complete",
+      "name": "完整需求",
+      "passed": true,
+      "failures": [],
+      "expect": {
+        "intent": "planning",
+        "services": {
+          "logo": 1,
+          "packaging": 2
+        },
+        "known": [
+          "brand_purpose",
+          "audience",
+          "style",
+          "assets",
+          "budget",
+          "deadline"
+        ],
+        "subtotal": 34000,
+        "contains": {
+          "brand_purpose": "慢日"
+        }
+      },
+      "turns": [
+        {
+          "id": 1,
+          "text": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。",
+          "question_key": null,
+          "question": null
+        }
+      ],
+      "runs": [
+        {
+          "state": {
+            "intent": "planning",
+            "services": [
+              {
+                "kind": "logo",
+                "label": "Logo",
+                "quantity": 1,
+                "status": "confirmed",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              },
+              {
+                "kind": "packaging",
+                "label": "包裝",
+                "quantity": 2,
+                "status": "confirmed",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              }
+            ],
+            "services_status": "known",
+            "slots": {
+              "brand_purpose": {
+                "value": "慢日咖啡店準備開幕，目的是讓新品牌辨識清楚。",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              },
+              "audience": {
+                "value": "附近上班族",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              },
+              "style": {
+                "value": "溫暖簡約手繪感",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              },
+              "assets": {
+                "value": "目前沒有素材",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              },
+              "budget": {
+                "value": "四萬元",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              },
+              "deadline": {
+                "value": "下個月完成",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              }
+            }
+          },
+          "durationMs": 7732,
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "timeoutMs": 30000,
+          "promptVersion": "intake-v3"
+        }
+      ],
+      "state": {
+        "intent": "planning",
+        "services": [
+          {
+            "kind": "logo",
+            "label": "Logo",
+            "quantity": 1,
+            "status": "confirmed",
+            "source_turn": 1,
+            "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+          },
+          {
+            "kind": "packaging",
+            "label": "包裝",
+            "quantity": 2,
+            "status": "confirmed",
+            "source_turn": 1,
+            "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+          }
+        ],
+        "services_status": "known",
+        "slots": {
+          "brand_purpose": {
+            "value": "慢日咖啡店準備開幕，目的是讓新品牌辨識清楚。",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+          },
+          "audience": {
+            "value": "附近上班族",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+          },
+          "style": {
+            "value": "溫暖簡約手繪感",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+          },
+          "assets": {
+            "value": "目前沒有素材",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+          },
+          "budget": {
+            "value": "四萬元",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+          },
+          "deadline": {
+            "value": "下個月完成",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+          }
+        }
+      },
+      "quote": {
+        "currency": "TWD",
+        "label": "POC 示範價目，非正式報價",
+        "lines": [
+          {
+            "kind": "logo",
+            "label": "Logo 設計",
+            "quantity": 1,
+            "unit": "案",
+            "unitPrice": 10000,
+            "amount": 10000
+          },
+          {
+            "kind": "packaging",
+            "label": "包裝視覺設計",
+            "quantity": 2,
+            "unit": "品項",
+            "unitPrice": 12000,
+            "amount": 24000
+          }
+        ],
+        "pending": [],
+        "subtotal": 34000,
+        "budgetAmount": 40000,
+        "overBudget": false
+      }
+    },
+    {
+      "id": "messy",
+      "name": "口語雜訊",
+      "passed": true,
+      "failures": [],
+      "expect": {
+        "services": {
+          "logo": 1
+        },
+        "absent": [
+          "packaging"
+        ],
+        "undecided": [
+          "budget"
+        ]
+      },
+      "turns": [
+        {
+          "id": 1,
+          "text": "就是我最近在想，店要開了，咖啡店啦，名字還沒想好。Logo 要做一個。先不用包裝，我還在想杯子要用什麼。希望不要太花，但不要幫我預設預算，我還沒決定。",
+          "question_key": null,
+          "question": null
+        }
+      ],
+      "runs": [
+        {
+          "state": {
+            "intent": "planning",
+            "services": [
+              {
+                "kind": "logo",
+                "label": "咖啡店 Logo",
+                "quantity": 1,
+                "status": "confirmed",
+                "source_turn": 1,
+                "source_quote": "就是我最近在想，店要開了，咖啡店啦，名字還沒想好。Logo 要做一個。先不用包裝，我還在想杯子要用什麼。希望不要太花，但不要幫我預設預算，我還沒決定。"
+              },
+              {
+                "kind": "packaging",
+                "label": "包裝",
+                "quantity": null,
+                "status": "excluded",
+                "source_turn": 1,
+                "source_quote": "就是我最近在想，店要開了，咖啡店啦，名字還沒想好。Logo 要做一個。先不用包裝，我還在想杯子要用什麼。希望不要太花，但不要幫我預設預算，我還沒決定。"
+              }
+            ],
+            "services_status": "known",
+            "slots": {
+              "brand_purpose": {
+                "value": "咖啡店即將開幕，店名尚未決定；希望製作 Logo。",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "就是我最近在想，店要開了，咖啡店啦，名字還沒想好。Logo 要做一個。先不用包裝，我還在想杯子要用什麼。希望不要太花，但不要幫我預設預算，我還沒決定。"
+              },
+              "audience": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "style": {
+                "value": "不要太花。",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "就是我最近在想，店要開了，咖啡店啦，名字還沒想好。Logo 要做一個。先不用包裝，我還在想杯子要用什麼。希望不要太花，但不要幫我預設預算，我還沒決定。"
+              },
+              "assets": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "budget": {
+                "value": null,
+                "status": "undecided",
+                "source_turn": 1,
+                "source_quote": "就是我最近在想，店要開了，咖啡店啦，名字還沒想好。Logo 要做一個。先不用包裝，我還在想杯子要用什麼。希望不要太花，但不要幫我預設預算，我還沒決定。"
+              },
+              "deadline": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              }
+            }
+          },
+          "durationMs": 7330,
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "timeoutMs": 30000,
+          "promptVersion": "intake-v3"
+        }
+      ],
+      "state": {
+        "intent": "planning",
+        "services": [
+          {
+            "kind": "logo",
+            "label": "咖啡店 Logo",
+            "quantity": 1,
+            "status": "confirmed",
+            "source_turn": 1,
+            "source_quote": "就是我最近在想，店要開了，咖啡店啦，名字還沒想好。Logo 要做一個。先不用包裝，我還在想杯子要用什麼。希望不要太花，但不要幫我預設預算，我還沒決定。"
+          },
+          {
+            "kind": "packaging",
+            "label": "包裝",
+            "quantity": null,
+            "status": "excluded",
+            "source_turn": 1,
+            "source_quote": "就是我最近在想，店要開了，咖啡店啦，名字還沒想好。Logo 要做一個。先不用包裝，我還在想杯子要用什麼。希望不要太花，但不要幫我預設預算，我還沒決定。"
+          }
+        ],
+        "services_status": "known",
+        "slots": {
+          "brand_purpose": {
+            "value": "咖啡店即將開幕，店名尚未決定；希望製作 Logo。",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "就是我最近在想，店要開了，咖啡店啦，名字還沒想好。Logo 要做一個。先不用包裝，我還在想杯子要用什麼。希望不要太花，但不要幫我預設預算，我還沒決定。"
+          },
+          "audience": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "style": {
+            "value": "不要太花。",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "就是我最近在想，店要開了，咖啡店啦，名字還沒想好。Logo 要做一個。先不用包裝，我還在想杯子要用什麼。希望不要太花，但不要幫我預設預算，我還沒決定。"
+          },
+          "assets": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "budget": {
+            "value": null,
+            "status": "undecided",
+            "source_turn": 1,
+            "source_quote": "就是我最近在想，店要開了，咖啡店啦，名字還沒想好。Logo 要做一個。先不用包裝，我還在想杯子要用什麼。希望不要太花，但不要幫我預設預算，我還沒決定。"
+          },
+          "deadline": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          }
+        }
+      },
+      "quote": {
+        "currency": "TWD",
+        "label": "POC 示範價目，非正式報價",
+        "lines": [
+          {
+            "kind": "logo",
+            "label": "Logo 設計",
+            "quantity": 1,
+            "unit": "案",
+            "unitPrice": 10000,
+            "amount": 10000
+          }
+        ],
+        "pending": [],
+        "subtotal": 10000,
+        "budgetAmount": null,
+        "overBudget": false
+      }
+    },
+    {
+      "id": "mixed",
+      "name": "複合服務",
+      "passed": true,
+      "failures": [],
+      "expect": {
+        "services": {
+          "brand": 1,
+          "packaging": 3,
+          "graphic": 2
+        },
+        "subtotal": 72000,
+        "contains": {
+          "brand_purpose": "小島"
+        }
+      },
+      "turns": [
+        {
+          "id": 1,
+          "text": "小島甜點品牌要重新做品牌識別，包含 Logo，另有三款包裝和兩張活動海報。",
+          "question_key": null,
+          "question": null
+        }
+      ],
+      "runs": [
+        {
+          "state": {
+            "intent": "planning",
+            "services": [
+              {
+                "kind": "brand",
+                "label": "小島甜點品牌識別（包含 Logo）",
+                "quantity": 1,
+                "status": "confirmed",
+                "source_turn": 1,
+                "source_quote": "小島甜點品牌要重新做品牌識別，包含 Logo，另有三款包裝和兩張活動海報。"
+              },
+              {
+                "kind": "packaging",
+                "label": "包裝",
+                "quantity": 3,
+                "status": "confirmed",
+                "source_turn": 1,
+                "source_quote": "小島甜點品牌要重新做品牌識別，包含 Logo，另有三款包裝和兩張活動海報。"
+              },
+              {
+                "kind": "graphic",
+                "label": "活動海報",
+                "quantity": 2,
+                "status": "confirmed",
+                "source_turn": 1,
+                "source_quote": "小島甜點品牌要重新做品牌識別，包含 Logo，另有三款包裝和兩張活動海報。"
+              }
+            ],
+            "services_status": "known",
+            "slots": {
+              "brand_purpose": {
+                "value": "小島甜點品牌要重新做品牌識別。",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "小島甜點品牌要重新做品牌識別，包含 Logo，另有三款包裝和兩張活動海報。"
+              },
+              "audience": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "style": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "assets": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "budget": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "deadline": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              }
+            }
+          },
+          "durationMs": 8227,
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "timeoutMs": 30000,
+          "promptVersion": "intake-v3"
+        }
+      ],
+      "state": {
+        "intent": "planning",
+        "services": [
+          {
+            "kind": "brand",
+            "label": "小島甜點品牌識別（包含 Logo）",
+            "quantity": 1,
+            "status": "confirmed",
+            "source_turn": 1,
+            "source_quote": "小島甜點品牌要重新做品牌識別，包含 Logo，另有三款包裝和兩張活動海報。"
+          },
+          {
+            "kind": "packaging",
+            "label": "包裝",
+            "quantity": 3,
+            "status": "confirmed",
+            "source_turn": 1,
+            "source_quote": "小島甜點品牌要重新做品牌識別，包含 Logo，另有三款包裝和兩張活動海報。"
+          },
+          {
+            "kind": "graphic",
+            "label": "活動海報",
+            "quantity": 2,
+            "status": "confirmed",
+            "source_turn": 1,
+            "source_quote": "小島甜點品牌要重新做品牌識別，包含 Logo，另有三款包裝和兩張活動海報。"
+          }
+        ],
+        "services_status": "known",
+        "slots": {
+          "brand_purpose": {
+            "value": "小島甜點品牌要重新做品牌識別。",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "小島甜點品牌要重新做品牌識別，包含 Logo，另有三款包裝和兩張活動海報。"
+          },
+          "audience": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "style": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "assets": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "budget": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "deadline": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          }
+        }
+      },
+      "quote": {
+        "currency": "TWD",
+        "label": "POC 示範價目，非正式報價",
+        "lines": [
+          {
+            "kind": "brand",
+            "label": "品牌識別基本方案（含 Logo）",
+            "quantity": 1,
+            "unit": "案",
+            "unitPrice": 30000,
+            "amount": 30000
+          },
+          {
+            "kind": "packaging",
+            "label": "包裝視覺設計",
+            "quantity": 3,
+            "unit": "品項",
+            "unitPrice": 12000,
+            "amount": 36000
+          },
+          {
+            "kind": "graphic",
+            "label": "單件平面設計",
+            "quantity": 2,
+            "unit": "件",
+            "unitPrice": 3000,
+            "amount": 6000
+          }
+        ],
+        "pending": [],
+        "subtotal": 72000,
+        "budgetAmount": null,
+        "overBudget": false
+      }
+    },
+    {
+      "id": "correction",
+      "name": "改口更新",
+      "passed": true,
+      "failures": [],
+      "expect": {
+        "services": {
+          "packaging": 3
+        },
+        "subtotal": 46000,
+        "contains": {
+          "budget": "五",
+          "brand_purpose": "慢日"
+        }
+      },
+      "turns": [
+        {
+          "id": 1,
+          "text": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。",
+          "question_key": null,
+          "question": null
+        },
+        {
+          "id": 2,
+          "text": "更正，包裝從兩款改成三款，預算改成五萬元。",
+          "question_key": null,
+          "question": null
+        }
+      ],
+      "runs": [
+        {
+          "state": {
+            "intent": "planning",
+            "services": [
+              {
+                "kind": "logo",
+                "label": "Logo",
+                "quantity": 1,
+                "status": "confirmed",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              },
+              {
+                "kind": "packaging",
+                "label": "包裝",
+                "quantity": 2,
+                "status": "confirmed",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              }
+            ],
+            "services_status": "known",
+            "slots": {
+              "brand_purpose": {
+                "value": "慢日咖啡店準備開幕，目的是讓新品牌辨識清楚。",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              },
+              "audience": {
+                "value": "附近上班族",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              },
+              "style": {
+                "value": "溫暖簡約手繪感",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              },
+              "assets": {
+                "value": "目前沒有素材",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              },
+              "budget": {
+                "value": "四萬元",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              },
+              "deadline": {
+                "value": "下個月完成",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              }
+            }
+          },
+          "durationMs": 8067,
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "timeoutMs": 30000,
+          "promptVersion": "intake-v3"
+        },
+        {
+          "state": {
+            "intent": "planning",
+            "services": [
+              {
+                "kind": "logo",
+                "label": "Logo",
+                "quantity": 1,
+                "status": "confirmed",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              },
+              {
+                "kind": "packaging",
+                "label": "包裝",
+                "quantity": 3,
+                "status": "confirmed",
+                "source_turn": 2,
+                "source_quote": "更正，包裝從兩款改成三款，預算改成五萬元。"
+              }
+            ],
+            "services_status": "known",
+            "slots": {
+              "brand_purpose": {
+                "value": "慢日咖啡店準備開幕，目的是讓新品牌辨識清楚。",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              },
+              "audience": {
+                "value": "附近上班族",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              },
+              "style": {
+                "value": "溫暖簡約手繪感",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              },
+              "assets": {
+                "value": "目前沒有素材",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              },
+              "budget": {
+                "value": "五萬元",
+                "status": "known",
+                "source_turn": 2,
+                "source_quote": "更正，包裝從兩款改成三款，預算改成五萬元。"
+              },
+              "deadline": {
+                "value": "下個月完成",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              }
+            }
+          },
+          "durationMs": 7561,
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "timeoutMs": 30000,
+          "promptVersion": "intake-v3"
+        }
+      ],
+      "state": {
+        "intent": "planning",
+        "services": [
+          {
+            "kind": "logo",
+            "label": "Logo",
+            "quantity": 1,
+            "status": "confirmed",
+            "source_turn": 1,
+            "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+          },
+          {
+            "kind": "packaging",
+            "label": "包裝",
+            "quantity": 3,
+            "status": "confirmed",
+            "source_turn": 2,
+            "source_quote": "更正，包裝從兩款改成三款，預算改成五萬元。"
+          }
+        ],
+        "services_status": "known",
+        "slots": {
+          "brand_purpose": {
+            "value": "慢日咖啡店準備開幕，目的是讓新品牌辨識清楚。",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+          },
+          "audience": {
+            "value": "附近上班族",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+          },
+          "style": {
+            "value": "溫暖簡約手繪感",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+          },
+          "assets": {
+            "value": "目前沒有素材",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+          },
+          "budget": {
+            "value": "五萬元",
+            "status": "known",
+            "source_turn": 2,
+            "source_quote": "更正，包裝從兩款改成三款，預算改成五萬元。"
+          },
+          "deadline": {
+            "value": "下個月完成",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+          }
+        }
+      },
+      "quote": {
+        "currency": "TWD",
+        "label": "POC 示範價目，非正式報價",
+        "lines": [
+          {
+            "kind": "logo",
+            "label": "Logo 設計",
+            "quantity": 1,
+            "unit": "案",
+            "unitPrice": 10000,
+            "amount": 10000
+          },
+          {
+            "kind": "packaging",
+            "label": "包裝視覺設計",
+            "quantity": 3,
+            "unit": "品項",
+            "unitPrice": 12000,
+            "amount": 36000
+          }
+        ],
+        "pending": [],
+        "subtotal": 46000,
+        "budgetAmount": 50000,
+        "overBudget": false
+      }
+    },
+    {
+      "id": "negative",
+      "name": "否定排除",
+      "passed": true,
+      "failures": [],
+      "expect": {
+        "services": {
+          "packaging": 2
+        },
+        "absent": [
+          "logo"
+        ],
+        "subtotal": 24000,
+        "contains": {
+          "brand_purpose": "慢日"
+        }
+      },
+      "turns": [
+        {
+          "id": 1,
+          "text": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。",
+          "question_key": null,
+          "question": null
+        },
+        {
+          "id": 2,
+          "text": "Logo 先不做了，只要原本的兩款包裝。",
+          "question_key": null,
+          "question": null
+        }
+      ],
+      "runs": [
+        {
+          "state": {
+            "intent": "planning",
+            "services": [
+              {
+                "kind": "logo",
+                "label": "Logo",
+                "quantity": 1,
+                "status": "confirmed",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              },
+              {
+                "kind": "packaging",
+                "label": "包裝",
+                "quantity": 2,
+                "status": "confirmed",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              }
+            ],
+            "services_status": "known",
+            "slots": {
+              "brand_purpose": {
+                "value": "慢日咖啡店準備開幕，需要設計，目的是讓新品牌辨識清楚。",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              },
+              "audience": {
+                "value": "附近上班族",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              },
+              "style": {
+                "value": "溫暖簡約手繪感",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              },
+              "assets": {
+                "value": "目前沒有素材",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              },
+              "budget": {
+                "value": "四萬元",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              },
+              "deadline": {
+                "value": "下個月完成",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              }
+            }
+          },
+          "durationMs": 8045,
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "timeoutMs": 30000,
+          "promptVersion": "intake-v3"
+        },
+        {
+          "state": {
+            "intent": "planning",
+            "services": [
+              {
+                "kind": "packaging",
+                "label": "包裝",
+                "quantity": 2,
+                "status": "confirmed",
+                "source_turn": 2,
+                "source_quote": "Logo 先不做了，只要原本的兩款包裝。"
+              }
+            ],
+            "services_status": "known",
+            "slots": {
+              "brand_purpose": {
+                "value": "慢日咖啡店準備開幕，需要設計，目的是讓新品牌辨識清楚。",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              },
+              "audience": {
+                "value": "附近上班族",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              },
+              "style": {
+                "value": "溫暖簡約手繪感",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              },
+              "assets": {
+                "value": "目前沒有素材",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              },
+              "budget": {
+                "value": "四萬元",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              },
+              "deadline": {
+                "value": "下個月完成",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+              }
+            }
+          },
+          "durationMs": 8233,
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "timeoutMs": 30000,
+          "promptVersion": "intake-v3"
+        }
+      ],
+      "state": {
+        "intent": "planning",
+        "services": [
+          {
+            "kind": "packaging",
+            "label": "包裝",
+            "quantity": 2,
+            "status": "confirmed",
+            "source_turn": 2,
+            "source_quote": "Logo 先不做了，只要原本的兩款包裝。"
+          }
+        ],
+        "services_status": "known",
+        "slots": {
+          "brand_purpose": {
+            "value": "慢日咖啡店準備開幕，需要設計，目的是讓新品牌辨識清楚。",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+          },
+          "audience": {
+            "value": "附近上班族",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+          },
+          "style": {
+            "value": "溫暖簡約手繪感",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+          },
+          "assets": {
+            "value": "目前沒有素材",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+          },
+          "budget": {
+            "value": "四萬元",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+          },
+          "deadline": {
+            "value": "下個月完成",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "慢日咖啡店準備開幕，需要 Logo 和兩款包裝，目的讓新品牌辨識清楚。目標是附近上班族，喜歡溫暖簡約手繪感，目前沒有素材，預算四萬元，下個月完成。"
+          }
+        }
+      },
+      "quote": {
+        "currency": "TWD",
+        "label": "POC 示範價目，非正式報價",
+        "lines": [
+          {
+            "kind": "packaging",
+            "label": "包裝視覺設計",
+            "quantity": 2,
+            "unit": "品項",
+            "unitPrice": 12000,
+            "amount": 24000
+          }
+        ],
+        "pending": [],
+        "subtotal": 24000,
+        "budgetAmount": 40000,
+        "overBudget": false
+      }
+    },
+    {
+      "id": "inquiry",
+      "name": "只詢價",
+      "passed": true,
+      "failures": [],
+      "expect": {
+        "intent": "inquiry",
+        "subtotal": 0
+      },
+      "turns": [
+        {
+          "id": 1,
+          "text": "我只是想問 Logo 多少錢，還沒有要做，也沒有決定要委託。",
+          "question_key": null,
+          "question": null
+        }
+      ],
+      "runs": [
+        {
+          "state": {
+            "intent": "inquiry",
+            "services": [
+              {
+                "kind": "logo",
+                "label": "Logo",
+                "quantity": null,
+                "status": "confirmed",
+                "source_turn": 1,
+                "source_quote": "我只是想問 Logo 多少錢，還沒有要做，也沒有決定要委託。"
+              }
+            ],
+            "services_status": "known",
+            "slots": {
+              "brand_purpose": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "audience": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "style": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "assets": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "budget": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "deadline": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              }
+            }
+          },
+          "durationMs": 8040,
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "timeoutMs": 30000,
+          "promptVersion": "intake-v3"
+        }
+      ],
+      "state": {
+        "intent": "inquiry",
+        "services": [
+          {
+            "kind": "logo",
+            "label": "Logo",
+            "quantity": null,
+            "status": "confirmed",
+            "source_turn": 1,
+            "source_quote": "我只是想問 Logo 多少錢，還沒有要做，也沒有決定要委託。"
+          }
+        ],
+        "services_status": "known",
+        "slots": {
+          "brand_purpose": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "audience": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "style": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "assets": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "budget": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "deadline": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          }
+        }
+      },
+      "quote": {
+        "currency": "TWD",
+        "label": "POC 示範價目，非正式報價",
+        "lines": [],
+        "pending": [
+          {
+            "label": "Logo",
+            "reason": "目前僅詢價，服務範圍待確認",
+            "unitPrice": 10000
+          }
+        ],
+        "subtotal": 0,
+        "budgetAmount": null,
+        "overBudget": false
+      }
+    },
+    {
+      "id": "hypothetical",
+      "name": "假設需求",
+      "passed": true,
+      "failures": [],
+      "expect": {
+        "services": {
+          "logo": 1
+        },
+        "absent": [
+          "packaging"
+        ],
+        "subtotal": 10000
+      },
+      "turns": [
+        {
+          "id": 1,
+          "text": "我確定要做一個 Logo。如果未來生意好，可能再做五款包裝，但現在沒有要做包裝。",
+          "question_key": null,
+          "question": null
+        }
+      ],
+      "runs": [
+        {
+          "state": {
+            "intent": "planning",
+            "services": [
+              {
+                "kind": "logo",
+                "label": "Logo",
+                "quantity": 1,
+                "status": "confirmed",
+                "source_turn": 1,
+                "source_quote": "我確定要做一個 Logo。如果未來生意好，可能再做五款包裝，但現在沒有要做包裝。"
+              }
+            ],
+            "services_status": "known",
+            "slots": {
+              "brand_purpose": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "audience": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "style": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "assets": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "budget": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "deadline": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              }
+            }
+          },
+          "durationMs": 7458,
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "timeoutMs": 30000,
+          "promptVersion": "intake-v3"
+        }
+      ],
+      "state": {
+        "intent": "planning",
+        "services": [
+          {
+            "kind": "logo",
+            "label": "Logo",
+            "quantity": 1,
+            "status": "confirmed",
+            "source_turn": 1,
+            "source_quote": "我確定要做一個 Logo。如果未來生意好，可能再做五款包裝，但現在沒有要做包裝。"
+          }
+        ],
+        "services_status": "known",
+        "slots": {
+          "brand_purpose": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "audience": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "style": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "assets": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "budget": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "deadline": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          }
+        }
+      },
+      "quote": {
+        "currency": "TWD",
+        "label": "POC 示範價目，非正式報價",
+        "lines": [
+          {
+            "kind": "logo",
+            "label": "Logo 設計",
+            "quantity": 1,
+            "unit": "案",
+            "unitPrice": 10000,
+            "amount": 10000
+          }
+        ],
+        "pending": [],
+        "subtotal": 10000,
+        "budgetAmount": null,
+        "overBudget": false
+      }
+    },
+    {
+      "id": "deadline-conflict",
+      "name": "明確矛盾",
+      "passed": true,
+      "failures": [],
+      "expect": {
+        "conflict": [
+          "deadline"
+        ]
+      },
+      "turns": [
+        {
+          "id": 1,
+          "text": "咖啡店要做 Logo，希望六月一日前完成，但又寫六月十五日，這兩個日期我還沒有確認哪個正確。",
+          "question_key": null,
+          "question": null
+        }
+      ],
+      "runs": [
+        {
+          "state": {
+            "intent": "planning",
+            "services": [
+              {
+                "kind": "logo",
+                "label": "咖啡店 Logo",
+                "quantity": 1,
+                "status": "confirmed",
+                "source_turn": 1,
+                "source_quote": "咖啡店要做 Logo，希望六月一日前完成，但又寫六月十五日，這兩個日期我還沒有確認哪個正確。"
+              }
+            ],
+            "services_status": "known",
+            "slots": {
+              "brand_purpose": {
+                "value": "咖啡店需要設計 Logo。",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "咖啡店要做 Logo，希望六月一日前完成，但又寫六月十五日，這兩個日期我還沒有確認哪個正確。"
+              },
+              "audience": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "style": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "assets": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "budget": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "deadline": {
+                "value": "六月一日前或六月十五日，尚未確認哪個正確。",
+                "status": "conflict",
+                "source_turn": 1,
+                "source_quote": "咖啡店要做 Logo，希望六月一日前完成，但又寫六月十五日，這兩個日期我還沒有確認哪個正確。"
+              }
+            }
+          },
+          "durationMs": 6932,
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "timeoutMs": 30000,
+          "promptVersion": "intake-v3"
+        }
+      ],
+      "state": {
+        "intent": "planning",
+        "services": [
+          {
+            "kind": "logo",
+            "label": "咖啡店 Logo",
+            "quantity": 1,
+            "status": "confirmed",
+            "source_turn": 1,
+            "source_quote": "咖啡店要做 Logo，希望六月一日前完成，但又寫六月十五日，這兩個日期我還沒有確認哪個正確。"
+          }
+        ],
+        "services_status": "known",
+        "slots": {
+          "brand_purpose": {
+            "value": "咖啡店需要設計 Logo。",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "咖啡店要做 Logo，希望六月一日前完成，但又寫六月十五日，這兩個日期我還沒有確認哪個正確。"
+          },
+          "audience": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "style": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "assets": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "budget": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "deadline": {
+            "value": "六月一日前或六月十五日，尚未確認哪個正確。",
+            "status": "conflict",
+            "source_turn": 1,
+            "source_quote": "咖啡店要做 Logo，希望六月一日前完成，但又寫六月十五日，這兩個日期我還沒有確認哪個正確。"
+          }
+        }
+      },
+      "quote": {
+        "currency": "TWD",
+        "label": "POC 示範價目，非正式報價",
+        "lines": [
+          {
+            "kind": "logo",
+            "label": "Logo 設計",
+            "quantity": 1,
+            "unit": "案",
+            "unitPrice": 10000,
+            "amount": 10000
+          }
+        ],
+        "pending": [],
+        "subtotal": 10000,
+        "budgetAmount": null,
+        "overBudget": false
+      }
+    },
+    {
+      "id": "unknown",
+      "name": "未定條件",
+      "passed": true,
+      "failures": [],
+      "expect": {
+        "undecided": [
+          "budget",
+          "deadline"
+        ],
+        "subtotal": 10000
+      },
+      "turns": [
+        {
+          "id": 1,
+          "text": "我想做一個 Logo，品牌是咖啡店。預算跟期限都還沒決定。",
+          "question_key": null,
+          "question": null
+        }
+      ],
+      "runs": [
+        {
+          "state": {
+            "intent": "planning",
+            "services": [
+              {
+                "kind": "logo",
+                "label": "Logo",
+                "quantity": 1,
+                "status": "confirmed",
+                "source_turn": 1,
+                "source_quote": "我想做一個 Logo，品牌是咖啡店。預算跟期限都還沒決定。"
+              }
+            ],
+            "services_status": "known",
+            "slots": {
+              "brand_purpose": {
+                "value": "品牌是咖啡店，想做一個 Logo",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "我想做一個 Logo，品牌是咖啡店。預算跟期限都還沒決定。"
+              },
+              "audience": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "style": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "assets": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "budget": {
+                "value": null,
+                "status": "undecided",
+                "source_turn": 1,
+                "source_quote": "我想做一個 Logo，品牌是咖啡店。預算跟期限都還沒決定。"
+              },
+              "deadline": {
+                "value": null,
+                "status": "undecided",
+                "source_turn": 1,
+                "source_quote": "我想做一個 Logo，品牌是咖啡店。預算跟期限都還沒決定。"
+              }
+            }
+          },
+          "durationMs": 6802,
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "timeoutMs": 30000,
+          "promptVersion": "intake-v3"
+        }
+      ],
+      "state": {
+        "intent": "planning",
+        "services": [
+          {
+            "kind": "logo",
+            "label": "Logo",
+            "quantity": 1,
+            "status": "confirmed",
+            "source_turn": 1,
+            "source_quote": "我想做一個 Logo，品牌是咖啡店。預算跟期限都還沒決定。"
+          }
+        ],
+        "services_status": "known",
+        "slots": {
+          "brand_purpose": {
+            "value": "品牌是咖啡店，想做一個 Logo",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "我想做一個 Logo，品牌是咖啡店。預算跟期限都還沒決定。"
+          },
+          "audience": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "style": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "assets": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "budget": {
+            "value": null,
+            "status": "undecided",
+            "source_turn": 1,
+            "source_quote": "我想做一個 Logo，品牌是咖啡店。預算跟期限都還沒決定。"
+          },
+          "deadline": {
+            "value": null,
+            "status": "undecided",
+            "source_turn": 1,
+            "source_quote": "我想做一個 Logo，品牌是咖啡店。預算跟期限都還沒決定。"
+          }
+        }
+      },
+      "quote": {
+        "currency": "TWD",
+        "label": "POC 示範價目，非正式報價",
+        "lines": [
+          {
+            "kind": "logo",
+            "label": "Logo 設計",
+            "quantity": 1,
+            "unit": "案",
+            "unitPrice": 10000,
+            "amount": 10000
+          }
+        ],
+        "pending": [],
+        "subtotal": 10000,
+        "budgetAmount": null,
+        "overBudget": false
+      }
+    },
+    {
+      "id": "quantity",
+      "name": "未知數量",
+      "passed": true,
+      "failures": [],
+      "expect": {
+        "services": {
+          "packaging": null
+        },
+        "subtotal": 0,
+        "pending": true
+      },
+      "turns": [
+        {
+          "id": 1,
+          "text": "咖啡店需要包裝設計，但幾款還在盤點，現在沒辦法決定。",
+          "question_key": null,
+          "question": null
+        }
+      ],
+      "runs": [
+        {
+          "state": {
+            "intent": "planning",
+            "services": [
+              {
+                "kind": "packaging",
+                "label": "咖啡店包裝設計",
+                "quantity": null,
+                "status": "undecided",
+                "source_turn": 1,
+                "source_quote": "咖啡店需要包裝設計，但幾款還在盤點，現在沒辦法決定。"
+              }
+            ],
+            "services_status": "known",
+            "slots": {
+              "brand_purpose": {
+                "value": "咖啡店需要包裝設計",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "咖啡店需要包裝設計，但幾款還在盤點，現在沒辦法決定。"
+              },
+              "audience": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "style": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "assets": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "budget": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "deadline": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              }
+            }
+          },
+          "durationMs": 6499,
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "timeoutMs": 30000,
+          "promptVersion": "intake-v3"
+        }
+      ],
+      "state": {
+        "intent": "planning",
+        "services": [
+          {
+            "kind": "packaging",
+            "label": "咖啡店包裝設計",
+            "quantity": null,
+            "status": "undecided",
+            "source_turn": 1,
+            "source_quote": "咖啡店需要包裝設計，但幾款還在盤點，現在沒辦法決定。"
+          }
+        ],
+        "services_status": "known",
+        "slots": {
+          "brand_purpose": {
+            "value": "咖啡店需要包裝設計",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "咖啡店需要包裝設計，但幾款還在盤點，現在沒辦法決定。"
+          },
+          "audience": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "style": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "assets": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "budget": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "deadline": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          }
+        }
+      },
+      "quote": {
+        "currency": "TWD",
+        "label": "POC 示範價目，非正式報價",
+        "lines": [],
+        "pending": [
+          {
+            "label": "咖啡店包裝設計",
+            "reason": "數量或需求尚未決定",
+            "unitPrice": 12000
+          }
+        ],
+        "subtotal": 0,
+        "budgetAmount": null,
+        "overBudget": false
+      }
+    },
+    {
+      "id": "scope",
+      "name": "範圍外",
+      "passed": true,
+      "failures": [],
+      "expect": {
+        "intent": "out_of_scope",
+        "subtotal": 0
+      },
+      "turns": [
+        {
+          "id": 1,
+          "text": "我要做一個有會員登入和購物車的網站，沒有品牌或平面設計需求。",
+          "question_key": null,
+          "question": null
+        }
+      ],
+      "runs": [
+        {
+          "state": {
+            "intent": "out_of_scope",
+            "services": [],
+            "services_status": "missing",
+            "slots": {
+              "brand_purpose": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "audience": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "style": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "assets": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "budget": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "deadline": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              }
+            }
+          },
+          "durationMs": 7012,
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "timeoutMs": 30000,
+          "promptVersion": "intake-v3"
+        }
+      ],
+      "state": {
+        "intent": "out_of_scope",
+        "services": [],
+        "services_status": "missing",
+        "slots": {
+          "brand_purpose": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "audience": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "style": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "assets": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "budget": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "deadline": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          }
+        }
+      },
+      "quote": {
+        "currency": "TWD",
+        "label": "POC 示範價目，非正式報價",
+        "lines": [],
+        "pending": [],
+        "subtotal": 0,
+        "budgetAmount": null,
+        "overBudget": false
+      }
+    },
+    {
+      "id": "bundle",
+      "name": "方案不重複計價",
+      "passed": true,
+      "failures": [],
+      "expect": {
+        "services": {
+          "brand": 1
+        },
+        "subtotal": 30000
+      },
+      "turns": [
+        {
+          "id": 1,
+          "text": "我要做一套品牌識別，裡面要有 Logo。Logo 就是這個方案的一部分，不是另外一案。",
+          "question_key": null,
+          "question": null
+        }
+      ],
+      "runs": [
+        {
+          "state": {
+            "intent": "planning",
+            "services": [
+              {
+                "kind": "brand",
+                "label": "品牌識別（含 Logo）",
+                "quantity": 1,
+                "status": "confirmed",
+                "source_turn": 1,
+                "source_quote": "我要做一套品牌識別，裡面要有 Logo。Logo 就是這個方案的一部分，不是另外一案。"
+              }
+            ],
+            "services_status": "known",
+            "slots": {
+              "brand_purpose": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "audience": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "style": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "assets": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "budget": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "deadline": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              }
+            }
+          },
+          "durationMs": 6399,
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "timeoutMs": 30000,
+          "promptVersion": "intake-v3"
+        }
+      ],
+      "state": {
+        "intent": "planning",
+        "services": [
+          {
+            "kind": "brand",
+            "label": "品牌識別（含 Logo）",
+            "quantity": 1,
+            "status": "confirmed",
+            "source_turn": 1,
+            "source_quote": "我要做一套品牌識別，裡面要有 Logo。Logo 就是這個方案的一部分，不是另外一案。"
+          }
+        ],
+        "services_status": "known",
+        "slots": {
+          "brand_purpose": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "audience": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "style": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "assets": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "budget": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "deadline": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          }
+        }
+      },
+      "quote": {
+        "currency": "TWD",
+        "label": "POC 示範價目，非正式報價",
+        "lines": [
+          {
+            "kind": "brand",
+            "label": "品牌識別基本方案（含 Logo）",
+            "quantity": 1,
+            "unit": "案",
+            "unitPrice": 30000,
+            "amount": 30000
+          }
+        ],
+        "pending": [],
+        "subtotal": 30000,
+        "budgetAmount": null,
+        "overBudget": false
+      }
+    },
+    {
+      "id": "skip",
+      "name": "跳過不重問",
+      "passed": true,
+      "failures": [],
+      "expect": {
+        "undecided": [
+          "deadline"
+        ],
+        "subtotal": 10000
+      },
+      "turns": [
+        {
+          "id": 1,
+          "text": "慢日咖啡店需要一個 Logo，目的是開幕辨識，客群是上班族，風格簡約，有店面照片可以沿用，預算兩萬元。",
+          "question_key": null,
+          "question": null
+        },
+        {
+          "id": 2,
+          "text": "還沒決定。",
+          "question_key": "deadline",
+          "question": "希望什麼時候完成？是否有開幕、上架或活動等固定日期？"
+        }
+      ],
+      "runs": [
+        {
+          "state": {
+            "intent": "planning",
+            "services": [
+              {
+                "kind": "logo",
+                "label": "Logo",
+                "quantity": 1,
+                "status": "confirmed",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店需要一個 Logo，目的是開幕辨識，客群是上班族，風格簡約，有店面照片可以沿用，預算兩萬元。"
+              }
+            ],
+            "services_status": "known",
+            "slots": {
+              "brand_purpose": {
+                "value": "慢日咖啡店；咖啡店，為開幕辨識設計 Logo",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店需要一個 Logo，目的是開幕辨識，客群是上班族，風格簡約，有店面照片可以沿用，預算兩萬元。"
+              },
+              "audience": {
+                "value": "上班族",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店需要一個 Logo，目的是開幕辨識，客群是上班族，風格簡約，有店面照片可以沿用，預算兩萬元。"
+              },
+              "style": {
+                "value": "簡約",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店需要一個 Logo，目的是開幕辨識，客群是上班族，風格簡約，有店面照片可以沿用，預算兩萬元。"
+              },
+              "assets": {
+                "value": "有店面照片可以沿用",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店需要一個 Logo，目的是開幕辨識，客群是上班族，風格簡約，有店面照片可以沿用，預算兩萬元。"
+              },
+              "budget": {
+                "value": "兩萬元",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店需要一個 Logo，目的是開幕辨識，客群是上班族，風格簡約，有店面照片可以沿用，預算兩萬元。"
+              },
+              "deadline": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              }
+            }
+          },
+          "durationMs": 7324,
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "timeoutMs": 30000,
+          "promptVersion": "intake-v3"
+        },
+        {
+          "state": {
+            "intent": "planning",
+            "services": [
+              {
+                "kind": "logo",
+                "label": "Logo",
+                "quantity": 1,
+                "status": "confirmed",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店需要一個 Logo，目的是開幕辨識，客群是上班族，風格簡約，有店面照片可以沿用，預算兩萬元。"
+              }
+            ],
+            "services_status": "known",
+            "slots": {
+              "brand_purpose": {
+                "value": "慢日咖啡店；咖啡店，為開幕辨識設計 Logo",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店需要一個 Logo，目的是開幕辨識，客群是上班族，風格簡約，有店面照片可以沿用，預算兩萬元。"
+              },
+              "audience": {
+                "value": "上班族",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店需要一個 Logo，目的是開幕辨識，客群是上班族，風格簡約，有店面照片可以沿用，預算兩萬元。"
+              },
+              "style": {
+                "value": "簡約",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店需要一個 Logo，目的是開幕辨識，客群是上班族，風格簡約，有店面照片可以沿用，預算兩萬元。"
+              },
+              "assets": {
+                "value": "有店面照片可以沿用",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店需要一個 Logo，目的是開幕辨識，客群是上班族，風格簡約，有店面照片可以沿用，預算兩萬元。"
+              },
+              "budget": {
+                "value": "兩萬元",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "慢日咖啡店需要一個 Logo，目的是開幕辨識，客群是上班族，風格簡約，有店面照片可以沿用，預算兩萬元。"
+              },
+              "deadline": {
+                "value": null,
+                "status": "undecided",
+                "source_turn": 2,
+                "source_quote": "還沒決定。"
+              }
+            }
+          },
+          "durationMs": 8291,
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "timeoutMs": 30000,
+          "promptVersion": "intake-v3"
+        }
+      ],
+      "state": {
+        "intent": "planning",
+        "services": [
+          {
+            "kind": "logo",
+            "label": "Logo",
+            "quantity": 1,
+            "status": "confirmed",
+            "source_turn": 1,
+            "source_quote": "慢日咖啡店需要一個 Logo，目的是開幕辨識，客群是上班族，風格簡約，有店面照片可以沿用，預算兩萬元。"
+          }
+        ],
+        "services_status": "known",
+        "slots": {
+          "brand_purpose": {
+            "value": "慢日咖啡店；咖啡店，為開幕辨識設計 Logo",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "慢日咖啡店需要一個 Logo，目的是開幕辨識，客群是上班族，風格簡約，有店面照片可以沿用，預算兩萬元。"
+          },
+          "audience": {
+            "value": "上班族",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "慢日咖啡店需要一個 Logo，目的是開幕辨識，客群是上班族，風格簡約，有店面照片可以沿用，預算兩萬元。"
+          },
+          "style": {
+            "value": "簡約",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "慢日咖啡店需要一個 Logo，目的是開幕辨識，客群是上班族，風格簡約，有店面照片可以沿用，預算兩萬元。"
+          },
+          "assets": {
+            "value": "有店面照片可以沿用",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "慢日咖啡店需要一個 Logo，目的是開幕辨識，客群是上班族，風格簡約，有店面照片可以沿用，預算兩萬元。"
+          },
+          "budget": {
+            "value": "兩萬元",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "慢日咖啡店需要一個 Logo，目的是開幕辨識，客群是上班族，風格簡約，有店面照片可以沿用，預算兩萬元。"
+          },
+          "deadline": {
+            "value": null,
+            "status": "undecided",
+            "source_turn": 2,
+            "source_quote": "還沒決定。"
+          }
+        }
+      },
+      "quote": {
+        "currency": "TWD",
+        "label": "POC 示範價目，非正式報價",
+        "lines": [
+          {
+            "kind": "logo",
+            "label": "Logo 設計",
+            "quantity": 1,
+            "unit": "案",
+            "unitPrice": 10000,
+            "amount": 10000
+          }
+        ],
+        "pending": [],
+        "subtotal": 10000,
+        "budgetAmount": 20000,
+        "overBudget": false
+      }
+    },
+    {
+      "id": "reference",
+      "name": "參考連結",
+      "passed": true,
+      "failures": [],
+      "expect": {
+        "services": {
+          "graphic": 2
+        },
+        "known": [
+          "style",
+          "assets"
+        ],
+        "subtotal": 6000,
+        "contains": {
+          "style": "https://example.com/menu"
+        }
+      },
+      "turns": [
+        {
+          "id": 1,
+          "text": "餐廳需要兩張菜單平面設計，參考 https://example.com/menu 的復古感。已有菜單文案和照片。",
+          "question_key": null,
+          "question": null
+        }
+      ],
+      "runs": [
+        {
+          "state": {
+            "intent": "planning",
+            "services": [
+              {
+                "kind": "graphic",
+                "label": "兩張菜單平面設計",
+                "quantity": 2,
+                "status": "confirmed",
+                "source_turn": 1,
+                "source_quote": "餐廳需要兩張菜單平面設計，參考 https://example.com/menu 的復古感。已有菜單文案和照片。"
+              }
+            ],
+            "services_status": "known",
+            "slots": {
+              "brand_purpose": {
+                "value": "餐廳；需要菜單平面設計。",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "餐廳需要兩張菜單平面設計，參考 https://example.com/menu 的復古感。已有菜單文案和照片。"
+              },
+              "audience": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "style": {
+                "value": "復古感；參考：https://example.com/menu",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "餐廳需要兩張菜單平面設計，參考 https://example.com/menu 的復古感。已有菜單文案和照片。"
+              },
+              "assets": {
+                "value": "已有菜單文案和照片。",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "餐廳需要兩張菜單平面設計，參考 https://example.com/menu 的復古感。已有菜單文案和照片。"
+              },
+              "budget": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "deadline": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              }
+            }
+          },
+          "durationMs": 7504,
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "timeoutMs": 30000,
+          "promptVersion": "intake-v3"
+        }
+      ],
+      "state": {
+        "intent": "planning",
+        "services": [
+          {
+            "kind": "graphic",
+            "label": "兩張菜單平面設計",
+            "quantity": 2,
+            "status": "confirmed",
+            "source_turn": 1,
+            "source_quote": "餐廳需要兩張菜單平面設計，參考 https://example.com/menu 的復古感。已有菜單文案和照片。"
+          }
+        ],
+        "services_status": "known",
+        "slots": {
+          "brand_purpose": {
+            "value": "餐廳；需要菜單平面設計。",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "餐廳需要兩張菜單平面設計，參考 https://example.com/menu 的復古感。已有菜單文案和照片。"
+          },
+          "audience": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "style": {
+            "value": "復古感；參考：https://example.com/menu",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "餐廳需要兩張菜單平面設計，參考 https://example.com/menu 的復古感。已有菜單文案和照片。"
+          },
+          "assets": {
+            "value": "已有菜單文案和照片。",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "餐廳需要兩張菜單平面設計，參考 https://example.com/menu 的復古感。已有菜單文案和照片。"
+          },
+          "budget": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "deadline": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          }
+        }
+      },
+      "quote": {
+        "currency": "TWD",
+        "label": "POC 示範價目，非正式報價",
+        "lines": [
+          {
+            "kind": "graphic",
+            "label": "單件平面設計",
+            "quantity": 2,
+            "unit": "件",
+            "unitPrice": 3000,
+            "amount": 6000
+          }
+        ],
+        "pending": [],
+        "subtotal": 6000,
+        "budgetAmount": null,
+        "overBudget": false
+      }
+    },
+    {
+      "id": "repair-conflict",
+      "name": "矛盾釐清",
+      "passed": true,
+      "failures": [],
+      "expect": {
+        "known": [
+          "deadline"
+        ],
+        "contains": {
+          "deadline": "十五"
+        },
+        "subtotal": 10000
+      },
+      "turns": [
+        {
+          "id": 1,
+          "text": "咖啡店想做 Logo，期限有六月一日與六月十五日兩個安排，還沒確認。",
+          "question_key": null,
+          "question": null
+        },
+        {
+          "id": 2,
+          "text": "期限確認是六月十五日，先前六月一日不用了。",
+          "question_key": "deadline",
+          "question": "關於「期限」，目前有不同說法。可以確認你最後想採用哪個安排嗎？"
+        }
+      ],
+      "runs": [
+        {
+          "state": {
+            "intent": "planning",
+            "services": [
+              {
+                "kind": "logo",
+                "label": "Logo",
+                "quantity": 1,
+                "status": "confirmed",
+                "source_turn": 1,
+                "source_quote": "咖啡店想做 Logo，期限有六月一日與六月十五日兩個安排，還沒確認。"
+              }
+            ],
+            "services_status": "known",
+            "slots": {
+              "brand_purpose": {
+                "value": "咖啡店想做 Logo",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "咖啡店想做 Logo，期限有六月一日與六月十五日兩個安排，還沒確認。"
+              },
+              "audience": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "style": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "assets": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "budget": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "deadline": {
+                "value": "期限有六月一日與六月十五日兩個安排，還沒確認",
+                "status": "conflict",
+                "source_turn": 1,
+                "source_quote": "咖啡店想做 Logo，期限有六月一日與六月十五日兩個安排，還沒確認。"
+              }
+            }
+          },
+          "durationMs": 6688,
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "timeoutMs": 30000,
+          "promptVersion": "intake-v3"
+        },
+        {
+          "state": {
+            "intent": "planning",
+            "services": [
+              {
+                "kind": "logo",
+                "label": "Logo",
+                "quantity": 1,
+                "status": "confirmed",
+                "source_turn": 1,
+                "source_quote": "咖啡店想做 Logo，期限有六月一日與六月十五日兩個安排，還沒確認。"
+              }
+            ],
+            "services_status": "known",
+            "slots": {
+              "brand_purpose": {
+                "value": "咖啡店想做 Logo",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "咖啡店想做 Logo，期限有六月一日與六月十五日兩個安排，還沒確認。"
+              },
+              "audience": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "style": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "assets": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "budget": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "deadline": {
+                "value": "六月十五日",
+                "status": "known",
+                "source_turn": 2,
+                "source_quote": "期限確認是六月十五日，先前六月一日不用了。"
+              }
+            }
+          },
+          "durationMs": 7822,
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "timeoutMs": 30000,
+          "promptVersion": "intake-v3"
+        }
+      ],
+      "state": {
+        "intent": "planning",
+        "services": [
+          {
+            "kind": "logo",
+            "label": "Logo",
+            "quantity": 1,
+            "status": "confirmed",
+            "source_turn": 1,
+            "source_quote": "咖啡店想做 Logo，期限有六月一日與六月十五日兩個安排，還沒確認。"
+          }
+        ],
+        "services_status": "known",
+        "slots": {
+          "brand_purpose": {
+            "value": "咖啡店想做 Logo",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "咖啡店想做 Logo，期限有六月一日與六月十五日兩個安排，還沒確認。"
+          },
+          "audience": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "style": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "assets": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "budget": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "deadline": {
+            "value": "六月十五日",
+            "status": "known",
+            "source_turn": 2,
+            "source_quote": "期限確認是六月十五日，先前六月一日不用了。"
+          }
+        }
+      },
+      "quote": {
+        "currency": "TWD",
+        "label": "POC 示範價目，非正式報價",
+        "lines": [
+          {
+            "kind": "logo",
+            "label": "Logo 設計",
+            "quantity": 1,
+            "unit": "案",
+            "unitPrice": 10000,
+            "amount": 10000
+          }
+        ],
+        "pending": [],
+        "subtotal": 10000,
+        "budgetAmount": null,
+        "overBudget": false
+      }
+    }
+  ]
+}

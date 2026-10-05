@@ -1,0 +1,30 @@
+{
+  "currency": "TWD",
+  "label": "POC 示範價目，非正式報價",
+  "items": {
+    "booking": {
+      "label": "基本個人時間預約服務",
+      "price": 990,
+      "setup": 2000,
+      "unit": "套"
+    },
+    "reminders": {
+      "label": "自動提醒通知",
+      "price": 300,
+      "setup": 0,
+      "unit": "套"
+    },
+    "team_management": {
+      "label": "多人共同管理",
+      "price": 500,
+      "setup": 0,
+      "unit": "套"
+    },
+    "calendar_sync": {
+      "label": "行事曆同步",
+      "price": 300,
+      "setup": 0,
+      "unit": "套"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {emptyState,nextQuestion,quote,markdown} from '../lib/domain.js';import {attachSources} from '../lib/compiler.js';
+const service=(kind,status='confirmed')=>({kind,label:kind,quantity:1,status,source_turn:1,source_quote:'預約'});
+test('月費、設定費分開，客製不猜價且排除否定',()=>{const s=emptyState();s.services=[service('booking'),service('reminders'),service('custom'),service('calendar_sync','excluded')];assert.equal(quote(s).monthly,1290);assert.equal(quote(s).setup,2000);assert.equal(quote(s).pending.length,1);});
+test('詢價及未決功能不當成已採用',()=>{const s=emptyState();s.services=[service('booking','undecided')];assert.equal(quote(s).monthly,0);s.intent='inquiry';s.services=[service('booking')];assert.equal(quote(s).setup,0);});
+test('矛盾優先，跳過已知或未定',()=>{const s=emptyState();s.services_status='known';s.slots.purpose.status='known';s.slots.team.status='undecided';s.slots.deadline.status='conflict';assert.equal(nextQuestion(s).key,'deadline');s.slots.deadline.status='undecided';assert.equal(nextQuestion(s).key,'availability');});
+test('來源驗證與完整摘要',()=>{const s=emptyState();s.services=[service('booking')];const raw=JSON.parse(JSON.stringify(s,(k,v)=>k==='source_quote'?undefined:v));assert.equal(attachSources(raw,[{id:1,text:'我要預約服務'}]).services[0].source_quote,'我要預約服務');raw.services[0].source_turn=9;assert.throws(()=>attachSources(raw,[{id:1,text:'預約'}]),/來源/);assert.match(markdown({state:s,id:'x',phase:'result',turns:[],runs:[],contact:{name:'測試',email:'test@example.com',phone:''}}),/專人/);});

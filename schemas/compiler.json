@@ -1,0 +1,284 @@
+{
+  "type": "object",
+  "properties": {
+    "intent": {
+      "type": "string",
+      "enum": [
+        "planning",
+        "inquiry",
+        "out_of_scope"
+      ]
+    },
+    "services": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "booking",
+              "reminders",
+              "team_management",
+              "calendar_sync",
+              "custom"
+            ]
+          },
+          "label": {
+            "type": "string"
+          },
+          "quantity": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "confirmed",
+              "undecided",
+              "excluded",
+              "conflict"
+            ]
+          },
+          "source_turn": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "required": [
+          "kind",
+          "label",
+          "quantity",
+          "status",
+          "source_turn"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "services_status": {
+      "type": "string",
+      "enum": [
+        "known",
+        "missing",
+        "undecided",
+        "conflict"
+      ]
+    },
+    "slots": {
+      "type": "object",
+      "properties": {
+        "purpose": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "known",
+                "missing",
+                "undecided",
+                "conflict"
+              ]
+            },
+            "source_turn": {
+              "type": [
+                "integer",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "source_turn"
+          ],
+          "additionalProperties": false
+        },
+        "team": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "known",
+                "missing",
+                "undecided",
+                "conflict"
+              ]
+            },
+            "source_turn": {
+              "type": [
+                "integer",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "source_turn"
+          ],
+          "additionalProperties": false
+        },
+        "availability": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "known",
+                "missing",
+                "undecided",
+                "conflict"
+              ]
+            },
+            "source_turn": {
+              "type": [
+                "integer",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "source_turn"
+          ],
+          "additionalProperties": false
+        },
+        "workflow": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "known",
+                "missing",
+                "undecided",
+                "conflict"
+              ]
+            },
+            "source_turn": {
+              "type": [
+                "integer",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "source_turn"
+          ],
+          "additionalProperties": false
+        },
+        "budget": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "known",
+                "missing",
+                "undecided",
+                "conflict"
+              ]
+            },
+            "source_turn": {
+              "type": [
+                "integer",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "source_turn"
+          ],
+          "additionalProperties": false
+        },
+        "deadline": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "known",
+                "missing",
+                "undecided",
+                "conflict"
+              ]
+            },
+            "source_turn": {
+              "type": [
+                "integer",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "source_turn"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "purpose",
+        "team",
+        "availability",
+        "workflow",
+        "budget",
+        "deadline"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "intent",
+    "services",
+    "services_status",
+    "slots"
+  ],
+  "additionalProperties": false
+}

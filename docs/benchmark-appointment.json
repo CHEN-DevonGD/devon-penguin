@@ -1,0 +1,714 @@
+{
+  "at": "2026-10-05T15:11:26.390Z",
+  "settings": {
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "timeoutMs": 30000,
+    "promptVersion": "appointment-v1"
+  },
+  "passed": 3,
+  "total": 3,
+  "latency": {
+    "calls": 4,
+    "medianMs": 8689,
+    "p90Ms": 9781,
+    "over10s": 0
+  },
+  "results": [
+    {
+      "id": "booking-basic",
+      "name": "完整基本需求",
+      "passed": true,
+      "failures": [],
+      "expect": {
+        "services": {
+          "booking": 1,
+          "reminders": 1,
+          "calendar_sync": 1
+        },
+        "absent": [
+          "team_management"
+        ],
+        "known": [
+          "purpose",
+          "team",
+          "availability",
+          "workflow",
+          "budget",
+          "deadline"
+        ],
+        "subtotal": 1590
+      },
+      "turns": [
+        {
+          "id": 1,
+          "text": "我是職涯顧問，想让客户自己预约一对一咨询。我一人管理，每次60分钟，平日晚上开放，提前一天预约。需要自动提醒和行事历同步，目前用讯息人工安排，无旧资料。每月预算两千元，一次设定三千元，下个月上线。",
+          "question_key": null,
+          "question": null
+        }
+      ],
+      "runs": [
+        {
+          "state": {
+            "intent": "planning",
+            "services": [
+              {
+                "kind": "booking",
+                "label": "個人時間預約",
+                "quantity": 1,
+                "status": "confirmed",
+                "source_turn": 1,
+                "source_quote": "我是職涯顧問，想让客户自己预约一对一咨询。我一人管理，每次60分钟，平日晚上开放，提前一天预约。需要自动提醒和行事历同步，目前用讯息人工安排，无旧资料。每月预算两千元，一次设定三千元，下个月上线。"
+              },
+              {
+                "kind": "reminders",
+                "label": "自動提醒",
+                "quantity": 1,
+                "status": "confirmed",
+                "source_turn": 1,
+                "source_quote": "我是職涯顧問，想让客户自己预约一对一咨询。我一人管理，每次60分钟，平日晚上开放，提前一天预约。需要自动提醒和行事历同步，目前用讯息人工安排，无旧资料。每月预算两千元，一次设定三千元，下个月上线。"
+              },
+              {
+                "kind": "calendar_sync",
+                "label": "行事曆同步",
+                "quantity": 1,
+                "status": "confirmed",
+                "source_turn": 1,
+                "source_quote": "我是職涯顧問，想让客户自己预约一对一咨询。我一人管理，每次60分钟，平日晚上开放，提前一天预约。需要自动提醒和行事历同步，目前用讯息人工安排，无旧资料。每月预算两千元，一次设定三千元，下个月上线。"
+              }
+            ],
+            "services_status": "known",
+            "slots": {
+              "purpose": {
+                "value": "職涯顧問提供一對一諮詢，讓客戶自行預約",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "我是職涯顧問，想让客户自己预约一对一咨询。我一人管理，每次60分钟，平日晚上开放，提前一天预约。需要自动提醒和行事历同步，目前用讯息人工安排，无旧资料。每月预算两千元，一次设定三千元，下个月上线。"
+              },
+              "team": {
+                "value": "1 人管理",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "我是職涯顧問，想让客户自己预约一对一咨询。我一人管理，每次60分钟，平日晚上开放，提前一天预约。需要自动提醒和行事历同步，目前用讯息人工安排，无旧资料。每月预算两千元，一次设定三千元，下个月上线。"
+              },
+              "availability": {
+                "value": "每次 60 分鐘；平日晚上開放；需提前一天預約",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "我是職涯顧問，想让客户自己预约一对一咨询。我一人管理，每次60分钟，平日晚上开放，提前一天预约。需要自动提醒和行事历同步，目前用讯息人工安排，无旧资料。每月预算两千元，一次设定三千元，下个月上线。"
+              },
+              "workflow": {
+                "value": "目前以訊息人工安排；無舊資料",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "我是職涯顧問，想让客户自己预约一对一咨询。我一人管理，每次60分钟，平日晚上开放，提前一天预约。需要自动提醒和行事历同步，目前用讯息人工安排，无旧资料。每月预算两千元，一次设定三千元，下个月上线。"
+              },
+              "budget": {
+                "value": "每月預算兩千元；一次設定三千元",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "我是職涯顧問，想让客户自己预约一对一咨询。我一人管理，每次60分钟，平日晚上开放，提前一天预约。需要自动提醒和行事历同步，目前用讯息人工安排，无旧资料。每月预算两千元，一次设定三千元，下个月上线。"
+              },
+              "deadline": {
+                "value": "下個月上線",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "我是職涯顧問，想让客户自己预约一对一咨询。我一人管理，每次60分钟，平日晚上开放，提前一天预约。需要自动提醒和行事历同步，目前用讯息人工安排，无旧资料。每月预算两千元，一次设定三千元，下个月上线。"
+              }
+            }
+          },
+          "durationMs": 9781,
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "timeoutMs": 30000,
+          "promptVersion": "appointment-v1"
+        }
+      ],
+      "state": {
+        "intent": "planning",
+        "services": [
+          {
+            "kind": "booking",
+            "label": "個人時間預約",
+            "quantity": 1,
+            "status": "confirmed",
+            "source_turn": 1,
+            "source_quote": "我是職涯顧問，想让客户自己预约一对一咨询。我一人管理，每次60分钟，平日晚上开放，提前一天预约。需要自动提醒和行事历同步，目前用讯息人工安排，无旧资料。每月预算两千元，一次设定三千元，下个月上线。"
+          },
+          {
+            "kind": "reminders",
+            "label": "自動提醒",
+            "quantity": 1,
+            "status": "confirmed",
+            "source_turn": 1,
+            "source_quote": "我是職涯顧問，想让客户自己预约一对一咨询。我一人管理，每次60分钟，平日晚上开放，提前一天预约。需要自动提醒和行事历同步，目前用讯息人工安排，无旧资料。每月预算两千元，一次设定三千元，下个月上线。"
+          },
+          {
+            "kind": "calendar_sync",
+            "label": "行事曆同步",
+            "quantity": 1,
+            "status": "confirmed",
+            "source_turn": 1,
+            "source_quote": "我是職涯顧問，想让客户自己预约一对一咨询。我一人管理，每次60分钟，平日晚上开放，提前一天预约。需要自动提醒和行事历同步，目前用讯息人工安排，无旧资料。每月预算两千元，一次设定三千元，下个月上线。"
+          }
+        ],
+        "services_status": "known",
+        "slots": {
+          "purpose": {
+            "value": "職涯顧問提供一對一諮詢，讓客戶自行預約",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "我是職涯顧問，想让客户自己预约一对一咨询。我一人管理，每次60分钟，平日晚上开放，提前一天预约。需要自动提醒和行事历同步，目前用讯息人工安排，无旧资料。每月预算两千元，一次设定三千元，下个月上线。"
+          },
+          "team": {
+            "value": "1 人管理",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "我是職涯顧問，想让客户自己预约一对一咨询。我一人管理，每次60分钟，平日晚上开放，提前一天预约。需要自动提醒和行事历同步，目前用讯息人工安排，无旧资料。每月预算两千元，一次设定三千元，下个月上线。"
+          },
+          "availability": {
+            "value": "每次 60 分鐘；平日晚上開放；需提前一天預約",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "我是職涯顧問，想让客户自己预约一对一咨询。我一人管理，每次60分钟，平日晚上开放，提前一天预约。需要自动提醒和行事历同步，目前用讯息人工安排，无旧资料。每月预算两千元，一次设定三千元，下个月上线。"
+          },
+          "workflow": {
+            "value": "目前以訊息人工安排；無舊資料",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "我是職涯顧問，想让客户自己预约一对一咨询。我一人管理，每次60分钟，平日晚上开放，提前一天预约。需要自动提醒和行事历同步，目前用讯息人工安排，无旧资料。每月预算两千元，一次设定三千元，下个月上线。"
+          },
+          "budget": {
+            "value": "每月預算兩千元；一次設定三千元",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "我是職涯顧問，想让客户自己预约一对一咨询。我一人管理，每次60分钟，平日晚上开放，提前一天预约。需要自动提醒和行事历同步，目前用讯息人工安排，无旧资料。每月预算两千元，一次设定三千元，下个月上线。"
+          },
+          "deadline": {
+            "value": "下個月上線",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "我是職涯顧問，想让客户自己预约一对一咨询。我一人管理，每次60分钟，平日晚上开放，提前一天预约。需要自动提醒和行事历同步，目前用讯息人工安排，无旧资料。每月预算两千元，一次设定三千元，下个月上线。"
+          }
+        }
+      },
+      "quote": {
+        "currency": "TWD",
+        "label": "POC 示範價目，非正式報價",
+        "lines": [
+          {
+            "kind": "booking",
+            "label": "基本個人時間預約服務",
+            "quantity": 1,
+            "unit": "套",
+            "unitPrice": 990,
+            "amount": 990,
+            "setup": 2000
+          },
+          {
+            "kind": "reminders",
+            "label": "自動提醒通知",
+            "quantity": 1,
+            "unit": "套",
+            "unitPrice": 300,
+            "amount": 300,
+            "setup": 0
+          },
+          {
+            "kind": "calendar_sync",
+            "label": "行事曆同步",
+            "quantity": 1,
+            "unit": "套",
+            "unitPrice": 300,
+            "amount": 300,
+            "setup": 0
+          }
+        ],
+        "pending": [],
+        "monthly": 1590,
+        "setup": 2000,
+        "subtotal": 1590,
+        "overBudget": false
+      }
+    },
+    {
+      "id": "correction-custom",
+      "name": "改口與另外開發",
+      "passed": true,
+      "failures": [],
+      "expect": {
+        "services": {
+          "booking": 1,
+          "reminders": 1,
+          "custom": 1
+        },
+        "absent": [
+          "team_management"
+        ],
+        "subtotal": 1290,
+        "pending": true
+      },
+      "turns": [
+        {
+          "id": 1,
+          "text": "我要顧問預約服務，需要提醒通知和多人共同管理，還要連公司內部系統。",
+          "question_key": null,
+          "question": null
+        },
+        {
+          "id": 2,
+          "text": "改成只有我一人使用，不要多人管理，提醒通知保留。",
+          "question_key": "availability",
+          "question": "每次預約多久？有哪些可預約時段、提前預約或取消的規則？"
+        }
+      ],
+      "runs": [
+        {
+          "state": {
+            "intent": "planning",
+            "services": [
+              {
+                "kind": "booking",
+                "label": "顧問預約服務",
+                "quantity": 1,
+                "status": "confirmed",
+                "source_turn": 1,
+                "source_quote": "我要顧問預約服務，需要提醒通知和多人共同管理，還要連公司內部系統。"
+              },
+              {
+                "kind": "reminders",
+                "label": "提醒通知",
+                "quantity": 1,
+                "status": "confirmed",
+                "source_turn": 1,
+                "source_quote": "我要顧問預約服務，需要提醒通知和多人共同管理，還要連公司內部系統。"
+              },
+              {
+                "kind": "team_management",
+                "label": "多人共同管理",
+                "quantity": 1,
+                "status": "confirmed",
+                "source_turn": 1,
+                "source_quote": "我要顧問預約服務，需要提醒通知和多人共同管理，還要連公司內部系統。"
+              },
+              {
+                "kind": "custom",
+                "label": "連公司內部系統",
+                "quantity": 1,
+                "status": "confirmed",
+                "source_turn": 1,
+                "source_quote": "我要顧問預約服務，需要提醒通知和多人共同管理，還要連公司內部系統。"
+              }
+            ],
+            "services_status": "known",
+            "slots": {
+              "purpose": {
+                "value": "顧問預約",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "我要顧問預約服務，需要提醒通知和多人共同管理，還要連公司內部系統。"
+              },
+              "team": {
+                "value": "多人共同管理；人數未提及",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "我要顧問預約服務，需要提醒通知和多人共同管理，還要連公司內部系統。"
+              },
+              "availability": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "workflow": {
+                "value": "需連接公司內部系統",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "我要顧問預約服務，需要提醒通知和多人共同管理，還要連公司內部系統。"
+              },
+              "budget": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "deadline": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              }
+            }
+          },
+          "durationMs": 9506,
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "timeoutMs": 30000,
+          "promptVersion": "appointment-v1"
+        },
+        {
+          "state": {
+            "intent": "planning",
+            "services": [
+              {
+                "kind": "booking",
+                "label": "顧問預約服務",
+                "quantity": 1,
+                "status": "confirmed",
+                "source_turn": 1,
+                "source_quote": "我要顧問預約服務，需要提醒通知和多人共同管理，還要連公司內部系統。"
+              },
+              {
+                "kind": "reminders",
+                "label": "提醒通知",
+                "quantity": 1,
+                "status": "confirmed",
+                "source_turn": 2,
+                "source_quote": "改成只有我一人使用，不要多人管理，提醒通知保留。"
+              },
+              {
+                "kind": "team_management",
+                "label": "多人共同管理",
+                "quantity": 1,
+                "status": "excluded",
+                "source_turn": 2,
+                "source_quote": "改成只有我一人使用，不要多人管理，提醒通知保留。"
+              },
+              {
+                "kind": "custom",
+                "label": "連公司內部系統",
+                "quantity": 1,
+                "status": "confirmed",
+                "source_turn": 1,
+                "source_quote": "我要顧問預約服務，需要提醒通知和多人共同管理，還要連公司內部系統。"
+              }
+            ],
+            "services_status": "known",
+            "slots": {
+              "purpose": {
+                "value": "顧問預約",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "我要顧問預約服務，需要提醒通知和多人共同管理，還要連公司內部系統。"
+              },
+              "team": {
+                "value": "只有我一人使用",
+                "status": "known",
+                "source_turn": 2,
+                "source_quote": "改成只有我一人使用，不要多人管理，提醒通知保留。"
+              },
+              "availability": {
+                "value": null,
+                "status": "undecided",
+                "source_turn": 2,
+                "source_quote": "改成只有我一人使用，不要多人管理，提醒通知保留。"
+              },
+              "workflow": {
+                "value": "需連接公司內部系統",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "我要顧問預約服務，需要提醒通知和多人共同管理，還要連公司內部系統。"
+              },
+              "budget": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "deadline": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              }
+            }
+          },
+          "durationMs": 8689,
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "timeoutMs": 30000,
+          "promptVersion": "appointment-v1"
+        }
+      ],
+      "state": {
+        "intent": "planning",
+        "services": [
+          {
+            "kind": "booking",
+            "label": "顧問預約服務",
+            "quantity": 1,
+            "status": "confirmed",
+            "source_turn": 1,
+            "source_quote": "我要顧問預約服務，需要提醒通知和多人共同管理，還要連公司內部系統。"
+          },
+          {
+            "kind": "reminders",
+            "label": "提醒通知",
+            "quantity": 1,
+            "status": "confirmed",
+            "source_turn": 2,
+            "source_quote": "改成只有我一人使用，不要多人管理，提醒通知保留。"
+          },
+          {
+            "kind": "team_management",
+            "label": "多人共同管理",
+            "quantity": 1,
+            "status": "excluded",
+            "source_turn": 2,
+            "source_quote": "改成只有我一人使用，不要多人管理，提醒通知保留。"
+          },
+          {
+            "kind": "custom",
+            "label": "連公司內部系統",
+            "quantity": 1,
+            "status": "confirmed",
+            "source_turn": 1,
+            "source_quote": "我要顧問預約服務，需要提醒通知和多人共同管理，還要連公司內部系統。"
+          }
+        ],
+        "services_status": "known",
+        "slots": {
+          "purpose": {
+            "value": "顧問預約",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "我要顧問預約服務，需要提醒通知和多人共同管理，還要連公司內部系統。"
+          },
+          "team": {
+            "value": "只有我一人使用",
+            "status": "known",
+            "source_turn": 2,
+            "source_quote": "改成只有我一人使用，不要多人管理，提醒通知保留。"
+          },
+          "availability": {
+            "value": null,
+            "status": "undecided",
+            "source_turn": 2,
+            "source_quote": "改成只有我一人使用，不要多人管理，提醒通知保留。"
+          },
+          "workflow": {
+            "value": "需連接公司內部系統",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "我要顧問預約服務，需要提醒通知和多人共同管理，還要連公司內部系統。"
+          },
+          "budget": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "deadline": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          }
+        }
+      },
+      "quote": {
+        "currency": "TWD",
+        "label": "POC 示範價目，非正式報價",
+        "lines": [
+          {
+            "kind": "booking",
+            "label": "基本個人時間預約服務",
+            "quantity": 1,
+            "unit": "套",
+            "unitPrice": 990,
+            "amount": 990,
+            "setup": 2000
+          },
+          {
+            "kind": "reminders",
+            "label": "自動提醒通知",
+            "quantity": 1,
+            "unit": "套",
+            "unitPrice": 300,
+            "amount": 300,
+            "setup": 0
+          }
+        ],
+        "pending": [
+          {
+            "label": "連公司內部系統",
+            "reason": "另外開發，需專人確認範圍與報價",
+            "unitPrice": null
+          }
+        ],
+        "monthly": 1290,
+        "setup": 2000,
+        "subtotal": 1290,
+        "overBudget": false
+      }
+    },
+    {
+      "id": "inquiry",
+      "name": "純詢價",
+      "passed": true,
+      "failures": [],
+      "expect": {
+        "intent": "inquiry",
+        "subtotal": 0
+      },
+      "turns": [
+        {
+          "id": 1,
+          "text": "只想問顧問預約服務和提醒通知多少錢，還沒有決定使用。",
+          "question_key": null,
+          "question": null
+        }
+      ],
+      "runs": [
+        {
+          "state": {
+            "intent": "inquiry",
+            "services": [
+              {
+                "kind": "booking",
+                "label": "顧問預約服務",
+                "quantity": 1,
+                "status": "undecided",
+                "source_turn": 1,
+                "source_quote": "只想問顧問預約服務和提醒通知多少錢，還沒有決定使用。"
+              },
+              {
+                "kind": "reminders",
+                "label": "提醒通知",
+                "quantity": 1,
+                "status": "undecided",
+                "source_turn": 1,
+                "source_quote": "只想問顧問預約服務和提醒通知多少錢，還沒有決定使用。"
+              }
+            ],
+            "services_status": "undecided",
+            "slots": {
+              "purpose": {
+                "value": "顧問預約服務",
+                "status": "known",
+                "source_turn": 1,
+                "source_quote": "只想問顧問預約服務和提醒通知多少錢，還沒有決定使用。"
+              },
+              "team": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "availability": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "workflow": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "budget": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              },
+              "deadline": {
+                "value": null,
+                "status": "missing",
+                "source_turn": null,
+                "source_quote": null
+              }
+            }
+          },
+          "durationMs": 8542,
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "timeoutMs": 30000,
+          "promptVersion": "appointment-v1"
+        }
+      ],
+      "state": {
+        "intent": "inquiry",
+        "services": [
+          {
+            "kind": "booking",
+            "label": "顧問預約服務",
+            "quantity": 1,
+            "status": "undecided",
+            "source_turn": 1,
+            "source_quote": "只想問顧問預約服務和提醒通知多少錢，還沒有決定使用。"
+          },
+          {
+            "kind": "reminders",
+            "label": "提醒通知",
+            "quantity": 1,
+            "status": "undecided",
+            "source_turn": 1,
+            "source_quote": "只想問顧問預約服務和提醒通知多少錢，還沒有決定使用。"
+          }
+        ],
+        "services_status": "undecided",
+        "slots": {
+          "purpose": {
+            "value": "顧問預約服務",
+            "status": "known",
+            "source_turn": 1,
+            "source_quote": "只想問顧問預約服務和提醒通知多少錢，還沒有決定使用。"
+          },
+          "team": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "availability": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "workflow": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "budget": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          },
+          "deadline": {
+            "value": null,
+            "status": "missing",
+            "source_turn": null,
+            "source_quote": null
+          }
+        }
+      },
+      "quote": {
+        "currency": "TWD",
+        "label": "POC 示範價目，非正式報價",
+        "lines": [],
+        "pending": [
+          {
+            "label": "顧問預約服務",
+            "reason": "是否採用待確認",
+            "unitPrice": 990
+          },
+          {
+            "label": "提醒通知",
+            "reason": "是否採用待確認",
+            "unitPrice": 300
+          }
+        ],
+        "monthly": 0,
+        "setup": 0,
+        "subtotal": 0,
+        "overBudget": false
+      }
+    }
+  ]
+}
