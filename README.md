@@ -64,3 +64,15 @@ npm run benchmark
 ## 私人 GitHub 協作
 
 本倉庫預計以個人帳號的 Private repository 分享。由擁有者在 GitHub 加入朋友為 collaborator 後，朋友須接受邀請，再以自己的帳號 clone 或 fork。個人帳號擁有的 Private repo 中，collaborator 具有讀取與寫入權限，並非唯讀下載權限。請不要把工作階段資料、原始對話 JSON／JSONL、登入憑證或本機備份加入版本控制。
+
+## 新專案 Skill：new-project-grill
+
+這個 repository 另提供 [從點子到可用交付的 Skill](skills/new-project-grill/SKILL.md)，可帶新手釐清想法、盤點資源、調查現有成果、選擇方案、規劃、實作及驗收。每批少量問題，保留「我不知道，幫我選」，可調深度、要求先出計畫及換對話續作。調查是完整流程的重要一部分，與考問交互進行；不固定技術棧或照搬此 POC 的產品功能。
+
+Codex 與 Claude Code 共用完整套件，安裝、更新、移除及 Windows／macOS／Linux 操作方式見 [工具適配與使用說明](skills/new-project-grill/references/host-adapters.md)。下載本 repository 不會自動安裝 Skill、不會修改個人 Agent 設定，也不會寫入記憶。
+
+可以先用這句話開始：
+
+> 使用 new-project-grill。我想做一個自己的小工具，先幫我釐清需求並查現有做法；我不知道的部分幫我選，這一輪只要計畫。
+
+[驗證與演練紀錄](docs/new-project-grill-verification.md)列出已實測及尚未實測的範圍。

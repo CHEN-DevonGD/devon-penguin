@@ -1,0 +1,4 @@
+interface:
+  display_name: "新專案考問與交付"
+  short_description: "帶新手釐清點子、盤點資源、調查並沿用成果，分階段規劃、實作、驗收與交接。"
+  default_prompt: "使用 $new-project-grill 帶我把新的軟體點子釐清成計畫；每題保留我不知道，幫我選，先別開始實作。"
